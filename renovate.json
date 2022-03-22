@@ -5,5 +5,8 @@
     ":automergeDisabled",
     ":disableDependencyDashboard",
     ":maintainLockFilesWeekly"
-  ]
+  ],
+  "pip_requirements": {
+    "fileMatch": ["requirements-ci.txt"]
+  }
 }
