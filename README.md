@@ -8,16 +8,16 @@ This repository contains a basic ansible execution environment.
 ## usage
 
 ### pull ansible ee
-```
+```text
 podman pull ghcr.io/linxside/ansible-ee:latest
 ```
 
 ### use ee in ansible-runner
-```
+```text
 ansible-runner run --container-image ghcr.io/linxside/ansible-ee:latest -p <YOUR-PLAYBOOK>.yaml
 ```
 
 ### use ee in ansible-navigator
-```
+```text
 ansible-navigator --eei ghcr.io/linxside/ansible-ee:latest
 ```
