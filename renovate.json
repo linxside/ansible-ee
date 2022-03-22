@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "config:base",
+    ":prHourlyLimit4",
+    ":automergeDisabled",
+    ":disableDependencyDashboard",
+    ":maintainLockFilesWeekly"
+  ]
+}

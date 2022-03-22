@@ -1,0 +1,19 @@
+---
+version: 1
+
+build_arg_defaults:
+  EE_BUILDER_IMAGE: 'quay.io/ansible/ansible-builder:latest'
+  EE_BASE_IMAGE: 'quay.io/ansible/ansible-runner:stable-2.12-latest'
+
+ansible_config: 'ansible.cfg'
+
+dependencies:
+  galaxy: requirements.yml
+  python: requirements.txt
+  system: bindep.txt
+
+additional_build_steps:
+  append:
+    - "RUN mkdir -p /usr/share/ansible/plugins"
+    # yamllint disable-line rule:line-length
+    - "RUN ln -s $(pip show mitogen | grep \"Location\" | sed  \"s/Location\\: //g\")/ansible_mitogen/plugins/strategy/ /usr/share/ansible/plugins/strategy"
