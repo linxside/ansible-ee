@@ -29,7 +29,7 @@ collections:
     source: https://galaxy.ansible.com
 
   - name: community.mysql
-    version: 3.1.3
+    version: 3.2.1
     source: https://galaxy.ansible.com
 
   - name: containers.podman
