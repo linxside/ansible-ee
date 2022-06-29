@@ -25,7 +25,7 @@ collections:
     source: https://galaxy.ansible.com
    
   - name: hetzner.hcloud
-    version: 1.6.0
+    version: 1.8.1
     source: https://galaxy.ansible.com
 
   - name: community.kubernetes
