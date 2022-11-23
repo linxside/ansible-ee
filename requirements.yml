@@ -17,7 +17,7 @@ collections:
     source: https://galaxy.ansible.com
 
   - name: community.general
-    version: 5.8.0
+    version: 5.8.1
     source: https://galaxy.ansible.com
 
   - name: community.grafana
