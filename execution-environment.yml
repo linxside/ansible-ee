@@ -1,11 +1,12 @@
 ---
-version: 1
+version: 3
 
-build_arg_defaults:
-  EE_BUILDER_IMAGE: 'quay.io/ansible/ansible-builder:latest'
-  EE_BASE_IMAGE: 'quay.io/ansible/ansible-runner:stable-2.12-latest'
+images:
+  base_image: 'registry.fedoraproject.org/fedora:39'
 
-ansible_config: 'ansible.cfg'
+additional_build_files:
+  - src: ansible.cfg
+    dest: configs
 
 dependencies:
   galaxy: requirements.yml
@@ -13,6 +14,9 @@ dependencies:
   system: bindep.txt
 
 additional_build_steps:
+  prepend_galaxy:
+    - ADD _build/configs/ansible.cfg ~/.ansible.cfg
+
   append:
     - "RUN mkdir -p /usr/share/ansible/plugins"
     # yamllint disable-line rule:line-length
