@@ -2,7 +2,8 @@
 version: 3
 
 images:
-  base_image: 'registry.fedoraproject.org/fedora:39'
+  base_image:
+    name: registry.fedoraproject.org/fedora-minimal:39
 
 additional_build_files:
   - src: ansible.cfg
