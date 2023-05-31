@@ -37,7 +37,7 @@ collections:
     source: https://galaxy.ansible.com
 
   - name: containers.podman
-    version: 1.10.1
+    version: 1.10.2
     source: https://galaxy.ansible.com
 
   - name: community.postgresql
