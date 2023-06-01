@@ -1,4 +1,4 @@
 ansible-core==2.14.3
-ansible-runner==2.3.2
+ansible-runner==2.3.3
 github3.py==4.0.1
 mitogen==0.3.3
