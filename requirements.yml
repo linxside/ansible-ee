@@ -9,7 +9,7 @@ collections:
     source: https://galaxy.ansible.com
 
   - name: community.crypto
-    version: 2.14.1
+    version: 2.15.0
     source: https://galaxy.ansible.com
 
   - name: community.docker
