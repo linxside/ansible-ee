@@ -16,7 +16,7 @@ collections:
     version: 8.1.0
 
   - name: community.grafana
-    version: 1.5.4
+    version: 1.6.1
    
   - name: hetzner.hcloud
     version: 2.1.1
