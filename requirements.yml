@@ -28,7 +28,7 @@ collections:
     version: 3.9.0
 
   - name: containers.podman
-    version: 1.15.2
+    version: 1.15.3
 
   - name: community.postgresql
     version: 3.4.1
