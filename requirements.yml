@@ -4,7 +4,7 @@ collections:
     version: 1.6.2
     
   - name: community.aws
-    version: 8.0.0
+    version: 9.0.0
 
   - name: community.crypto
     version: 2.22.3
