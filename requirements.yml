@@ -31,4 +31,4 @@ collections:
     version: 1.16.2
 
   - name: community.postgresql
-    version: 3.9.1
+    version: 3.10.2
